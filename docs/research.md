@@ -27,6 +27,16 @@ Tavily 也搜到 Godot 官方列出 `.blend` 直接导入作为快速迭代选�
 
 这些峰值的时间跨度不一样。Outlast Trials 是这里最新的短期峰值；WARDOGS 和 Slay the Spire 2 更适合当玩法和规模案例，不该说成 10 月正在霸榜。
 
+## Astra Games：GPT-6 Astra 原型目录
+
+| 入口 | 是什么 | 怎么用 |
+|---|---|---|
+| [Astra Games 中文站](https://astragames.aigccreative.com/zh-CN) | 社区整理的可试玩游戏、交互实验和艺术沙盒目录；站点声明与 OpenAI 无隶属，收录不代表 benchmark 或官方背书。[42] | 看短流程原型、交互创意和创作者公开的模型参与记录，不当成教程或质量榜。 |
+| [网站代码](https://github.com/stackloomdev/astra-games) | 你图里指向的仓库。它是 Next.js 多语言目录网站，README 说明作品列表不是在这里维护，而是动态解析上游 README；网站代码自述 MIT，上游目录文本与视觉素材为 CC0 1.0。[40] | 看目录网站如何多语言展示作品；要看作品条目和提交历史，去上游清单。 |
+| [上游作品清单](https://github.com/MartinDelophy/awesome-gpt-6-astra) | 真正维护作品条目的仓库。README 标注维护时间 2026-10-09，并说明模型归因基于作者或提交者的公开说法，不等于每个项目都重新试玩验证。[41][43] | 适合找可运行原型做玩法拆解。提交标准要求可试玩链接或带运行说明的源码、实机截图、平台/访问条件、创作者署名和 Astra 参与依据。[41][42] |
+
+上游清单采用 CC0 1.0，但每个被链接作品仍按自己的许可处理；不要把“目录可复用”误读成“里面的游戏素材都能拿来用”。[40][41]
+
 ## GitHub 工具与工作流
 
 星数和推送时间是本次 GitHub API 快照，不是质量分。
@@ -131,3 +141,7 @@ Tavily 也搜到 Godot 官方列出 `.blend` 直接导入作为快速迭代选�
 [37] https://www.gdquest.com/library/first_shader_godot4_portal
 [38] https://github.com/gdquest-demos/godot-4-your-first-shader-from-zero
 [39] https://x.com/NathanGDQuest/status/2098758019370701099
+[40] https://github.com/stackloomdev/astra-games
+[41] https://github.com/MartinDelophy/awesome-gpt-6-astra
+[42] https://astragames.aigccreative.com/zh-CN
+[43] https://github.com/MartinDelophy/awesome-gpt-6-astra/blob/main/README.zh-CN.md
