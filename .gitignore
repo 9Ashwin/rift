@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.godot/
+*.blend1
+*.blend2
+*.import
+.DS_Store
+Thumbs.db
+build/
+dist/
+exports/
+*.pck
+*.zip
