@@ -2,6 +2,19 @@
 
 **检索快照：2026-10-10**。这不是一份“全网最火榜”，而是按 Godot + Blender 教学价值筛出的候选。GitHub 星数、Steam 并发和 X 页面都会变化，复用时请再核一次。
 
+## Tavily 本轮筛出的新增好资源
+
+| 资源 | 为什么值得留 | 使用边界 |
+|---|---|---|
+| [Learn GDScript From Zero](https://github.com/GDQuest/learn-gdscript) | 2,797★，免费互动式 GDScript 入门，适合先补编程基础；2026-10-10 有更新。[29] | 网页版可直接学；要在本机编辑源码，README 要求定制版 Godot 4.6.3。GitHub API 未识别 SPDX 许可证，复用前看仓库 LICENSE。 |
+| [Godot 4 Open RPG](https://github.com/gdquest-demos/godot-open-rpg) | 3,007★、MIT，GDQuest 用它展示 2D 回合制 RPG 的代码组织。[30] | 项目仍是 WIP，README 固定要求 Godot 4.6.2；适合读架构，不是 3D/Blender 样板。 |
+| [Godot AI](https://github.com/hi-godot/godot-ai) | 2,893★、MIT，2026-10-10 有推送；README 列出 46 个工具、120 多种操作，支持 Codex、Hermes 等 MCP 客户端。[31] | 偏“实时驱动 Godot 编辑器”。权限面大，先在副本验证，别一上来接主项目。 |
+| [satelliteoflove/godot-mcp](https://github.com/satelliteoflove/godot-mcp) | 173★、MIT，2026-10-02 有推送；重点是输入注入、确定性试玩和运行时状态检查。[32] | README 要求 Godot 4.5+、Node 20+；如果重点是让 Agent 测游戏，这个比单纯生成脚本更对口。 |
+| [GD-Agentic-Skills](https://github.com/thedivergentai/gd-agentic-skills) | 825★，LGPL-3.0；README 列出 99 个 Godot 技能和 27 个类型蓝图，面向 Godot 4.7+。[33] | 技能内容是作者自述；拷贝或再发布前先读 LGPL 条款，按项目所用引擎版本挑选。 |
+| [Your First Shader from ZERO in Godot 4](https://www.gdquest.com/library/first_shader_godot4_portal) | GDQuest 2026-09-23 发布的免费 shader 学习指南，配套源码在 GitHub。[37][38] | 指南标注代码 MIT、美术资产 CC BY-NC-SA；代码和素材许可不同，别混着用。 |
+
+Tavily 也搜到 Godot 官方列出 `.blend` 直接导入作为快速迭代选项。[35] 本项目仍先教 GLB/glTF 的显式导出流程，容易检查和复现。另有 [Nexus Importer](https://github.com/undomick/godot-nexus-importer)，MIT、2026-10-02 有更新，但它依赖一个付费的 Blender 导出插件，故只放候选，不作为免费课程前置。[34]
+
 ## 游戏案例
 
 | 案例 | 可核对的热度信号 | 值得拆的部分 | 对教学项目的用法 |
@@ -64,11 +77,15 @@
 - [Alex Prompter 的帖子](https://x.com/alex_prompter/status/2101609043077042547)展示了 Codex 通过 MCP 调用 Hyper3D Rodin 生成 3D 资产的工作流。[21]
 - [Tripo 官方账号](https://x.com/tripoai)在 2026-10-08 发布了 Tripo P2.0 生成环境、再放进 Blender 拆分的演示。[22]
 - [Godot 官方账号](https://x.com/godotengine/status/2021906412537069630)提到 Buckshot Roulette 开发者加入 Godot Development Fund，可作为引擎生态动态，不是游戏热度排名。[23]
+- [GDQuest X 账号](https://x.com/NathanGDQuest)[36]发布了[shader 系列预告](https://x.com/NathanGDQuest/status/2098758019370701099)[39]。
+- 正式指南页面标注日期为 2026-09-23，代码 MIT、素材 CC BY-NC-SA；配套源码在 GitHub。[37][38]
 
 ## 我会怎么选
 
-- **先学会做完一款**：GDQuest 的 3D 入门项目 → Blender/Godot 配套教程 → 自己做一张小关卡。[12][13]
-- **让 Agent 帮忙改 Godot 工程**：先试 `godot-agent` 的一个 headless 检查流程；它还在 pre-1.0，别让它直接接管整个项目。[9]
+- **完全新手**：先在网页做 Learn GDScript From Zero，再跟 GDQuest 的 3D 入门项目，之后补 Blender/Godot 配套教程。[12][13][29]
+- **让 Agent 帮忙改 Godot 工程**：`godot-agent` 做 CLI/headless 检查；`Godot AI` 是更宽的实时编辑器 MCP。先选一个，在副本里跑通再说。[9][31]
+- **需要自动试玩**：看 `satelliteoflove/godot-mcp` 的输入注入与确定性测试，不要只让 Agent“看起来能跑”。[32]
+- **给 3D 项目加视觉效果**：基础移动和玩法稳定后，再跟 GDQuest 的 shader 入门指南。[37][38]
 - **需要美术流程**：先看 `awesome-gamedev-agent-skills` 的资产制作技能；生成模型只做可选加速，最终要检查拓扑、尺度、材质、碰撞体和许可。[8]
 - **想让 Agent 操作 Blender**：先看 `MCP for Blender`，再用 Blender Skills 把步骤拆成可复用指令；两者都先在项目副本里试。[27][28]
 - **要学习 AI 团队编排**：看 CCGS 的工作流结构；若目标是 Godot UI，则把 `game-ui-design-workflow` 的阶段拆解改成 Godot 资源和场景交付。[6][7]
@@ -103,3 +120,14 @@
 [26] https://www.eurogamer.net/steams-fourth-most-played-game-doesnt-really-make-any-money-and-its-developer-says-its-better-off-that-way
 [27] https://github.com/ahujasid/mcp-for-blender
 [28] https://github.com/arjun988/blender-skills
+[29] https://github.com/GDQuest/learn-gdscript
+[30] https://github.com/gdquest-demos/godot-open-rpg
+[31] https://github.com/hi-godot/godot-ai
+[32] https://github.com/satelliteoflove/godot-mcp
+[33] https://github.com/thedivergentai/gd-agentic-skills
+[34] https://github.com/undomick/godot-nexus-importer
+[35] https://godotengine.org/features
+[36] https://x.com/NathanGDQuest
+[37] https://www.gdquest.com/library/first_shader_godot4_portal
+[38] https://github.com/gdquest-demos/godot-4-your-first-shader-from-zero
+[39] https://x.com/NathanGDQuest/status/2098758019370701099
