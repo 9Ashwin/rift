@@ -1,6 +1,6 @@
 # 游戏案例、工具与教程
 
-**检索快照：2026-10-10**。这不是一份“全网最火榜”，而是按 Godot + Blender 教学价值筛出的候选。GitHub 星数、Steam 并发和 X 页面都会变化，复用时请再核一次。
+**首次检索：2026-10-10；Astra/Tidewater 补充：2026-10-11**。这不是一份“全网最火榜”，而是按 Godot + Blender 教学价值筛出的候选。GitHub 星数、Steam 并发和 X 页面都会变化，复用时请再核一次。
 
 ## Tavily 本轮筛出的新增好资源
 
@@ -23,7 +23,10 @@ Tavily 也搜到 Godot 官方列出 `.blend` 直接导入作为快速迭代选�
 | WARDOGS | SteamDB 记录 2026-09-13 历史峰值 428,666。[2] | 大规模战场的可读性、队伍协作和武器反馈。 | 当作系统设计观察材料，不适合第一个项目照着做。 |
 | Slay the Spire 2 | SteamDB 记录 2026-03-08 历史峰值 574,638。[3] | 卡牌构筑、路线选择、可组合的内容数据。 | 适合研究“少量规则如何长出很多局面”，但它不是 Godot/Blender 技术样板。 |
 | Buckshot Roulette | Godot 官方把它列为 2024 年独立游戏成功案例，并在 2026 年访谈开发者；开发者谈到 Godot 的使用经验。[4][5] | 小空间、短回合、信息揭示和风险升级。 | 作为 Godot 小体量游戏的案例，不复制其题材、规则或美术。 |
+| [Tidewater](https://github.com/dgreenheck/tidewater) | GitHub API 2026-10-11：1,206★、268 forks；MIT，最近推送 2026-09-25。[44] | 浏览器 3D 岛屿钓鱼游戏，用 WebGPU/WGSL 自研渲染器，无框架；玩法有钓鱼、卖鱼、升级装备和探索海岛。[44] | 适合观察大型 3D 项目的系统拆分、渲染与经济循环；不是 Godot/Blender 教程。需要支持 WebGPU 的浏览器和较强 GPU，首载会编译大量 shader；第三方资产许可见 CREDITS。[44][45] |
 | Bongo Cat | 媒体报道指出它的在线人数与桌面挂件/按键计数玩法有关。[26] | 桌面常驻、低干扰互动、装饰收集。 | 提醒我们别把 Steam 并发数直接当成“核心玩法很强”的证据。 |
+
+Tidewater 的 GitHub 描述称它是 “Coastal town built with Opus 5.5”，这是项目方的归因描述，不是独立验证。[44]
 
 这些峰值的时间跨度不一样。Outlast Trials 是这里最新的短期峰值；WARDOGS 和 Slay the Spire 2 更适合当玩法和规模案例，不该说成 10 月正在霸榜。
 
@@ -145,3 +148,5 @@ Tavily 也搜到 Godot 官方列出 `.blend` 直接导入作为快速迭代选�
 [41] https://github.com/MartinDelophy/awesome-gpt-6-astra
 [42] https://astragames.aigccreative.com/zh-CN
 [43] https://github.com/MartinDelophy/awesome-gpt-6-astra/blob/main/README.zh-CN.md
+[44] https://github.com/dgreenheck/tidewater
+[45] https://github.com/dgreenheck/tidewater/blob/main/CREDITS.md
